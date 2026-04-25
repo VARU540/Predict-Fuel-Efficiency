@@ -1,23 +1,21 @@
-# 🚗 Predict Fuel Efficiency (ML Project)
+# 🚗 Predict Fuel Efficiency using TensorFlow
 
 ## 📌 Overview
-This project focuses on predicting the fuel efficiency (MPG - Miles Per Gallon) of vehicles using Machine Learning techniques.  
-The model is trained on automobile data containing features like engine size, horsepower, weight, and acceleration.
-
-Fuel efficiency prediction helps in optimizing vehicle performance and reducing environmental impact.
+This project predicts the fuel efficiency (MPG - Miles Per Gallon) of vehicles using Deep Learning with TensorFlow.  
+It leverages neural networks to learn complex relationships between vehicle features and fuel consumption.
 
 ---
 
 ## 🎯 Objective
-- Predict fuel efficiency of a vehicle based on input features
-- Perform data analysis and preprocessing
-- Train and evaluate machine learning models
+- Build a Deep Learning model to predict fuel efficiency
+- Analyze the impact of engine and vehicle parameters
+- Improve prediction accuracy using neural networks
 
 ---
 
 ## 📊 Dataset
-- Dataset used: Auto MPG Dataset
-- Features include:
+- Dataset: Auto MPG Dataset
+- Features:
   - Cylinders
   - Displacement
   - Horsepower
@@ -26,21 +24,21 @@ Fuel efficiency prediction helps in optimizing vehicle performance and reducing 
   - Model Year
   - Origin
 
-👉 These features are commonly used for MPG prediction models :contentReference[oaicite:1]{index=1}
-
 ---
 
 ## ⚙️ Tech Stack
 - Python 🐍
+- :contentReference[oaicite:1]{index=1}
 - Pandas & NumPy
 - Matplotlib & Seaborn
-- Scikit-learn
 
 ---
 
-## 🧠 Machine Learning Models
-- Linear Regression
-- (Optional: Decision Tree / Random Forest)
+## 🧠 Model Architecture
+- Fully Connected Neural Network (ANN)
+- Input Layer → Hidden Layers (ReLU) → Output Layer
+- Loss Function: Mean Squared Error (MSE)
+- Optimizer: Adam
 
 ---
 
@@ -48,17 +46,17 @@ Fuel efficiency prediction helps in optimizing vehicle performance and reducing 
 1. Data Collection
 2. Data Cleaning & Preprocessing
 3. Exploratory Data Analysis (EDA)
-4. Feature Engineering
-5. Model Training
-6. Model Evaluation
+4. Feature Normalization
+5. Model Building (TensorFlow/Keras)
+6. Model Training
+7. Model Evaluation
 
 ---
 
 ## 📈 Evaluation Metrics
 - Mean Squared Error (MSE)
-- R² Score  
-
-These metrics help measure model accuracy and performance :contentReference[oaicite:2]{index=2}
+- Mean Absolute Error (MAE)
+- R² Score
 
 ---
 
@@ -68,11 +66,11 @@ These metrics help measure model accuracy and performance :contentReference[oaic
 # Clone the repository
 git clone https://github.com/VARU540/Predict-Fuel-Efficiency.git
 
-# Navigate to folder
+# Navigate to project folder
 cd Predict-Fuel-Efficiency
 
 # Install dependencies
-pip install numpy pandas matplotlib seaborn scikit-learn
+pip install tensorflow pandas numpy matplotlib seaborn
 
 # Run notebook
 jupyter notebook
@@ -81,15 +79,17 @@ jupyter notebook
 ---
 
 ## 📌 Results
-- Successfully predicted MPG using ML models
-- Observed strong correlation between weight, horsepower, and fuel efficiency
+- Deep Learning model achieved strong prediction accuracy
+- Weight and horsepower are major factors affecting MPG
+- Neural networks captured non-linear relationships effectively
 
 ---
 
 ## 💡 Future Improvements
-- Add Deep Learning model (TensorFlow/Keras)
-- Deploy using Streamlit
-- Add real-time prediction UI
+- Hyperparameter tuning
+- Add Dropout for better generalization
+- Deploy using Streamlit Web App
+- Convert to real-time prediction system
 
 ---
 
